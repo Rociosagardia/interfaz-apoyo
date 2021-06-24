@@ -1,0 +1,100 @@
+/* cambiar tipo de letra */
+nav.navbar ul.nav li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* cambiar el color de fondo a la barra */
+
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 1rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 40rem;
+    width: 100rem;
+  }
+  .carousel-item > img {
+    position: center;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  .webmadewell {
+    background-color: white;
+  }
+  body {
+    margin: 0;
+  }
+  .sample-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url(../img/apoyo.jpg);
+    background-position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sample-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #CC1414;
+    opacity: 0.3;
+  }
+  .sample-header-section {
+    position: relative;
+    padding: 15% 0 10%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+  }
+  h1 {
+    font-weight: 500;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 400;
+  }
+  .sample-section-wrap {
+    position: unset;
+    background-color: #CC1414;
+  }
+  .sample-section {
+    position: relative;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+  }
+  
+  .btn-warning1 {
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    font-family:sans-serif;
+}
+  
+  
+  
+  

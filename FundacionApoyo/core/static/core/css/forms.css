@@ -1,0 +1,15 @@
+form {
+    width: 400px;
+    font: normal bold 12px Verdana, Arial;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+}
+
+form input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+}

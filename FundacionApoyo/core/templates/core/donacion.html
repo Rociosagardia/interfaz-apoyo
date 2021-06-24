@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        {% if form %}
+        <form method="POST" action="" enctype="multipart/form-data" id="formulario">
+            <div class="form-group">
+                {% csrf_token %} {{ form.as_p }}
+            </div>
+            <input type="submit" class="btn btn-primary btnwidth" id="id_guardar" value="Registrar">
+            <!-- <input type="reset" class="btn btn-primary btnwidth" id="id_nuevo" value="Nuevo"> -->
+            <a class="btn btn-info btnwidth" href="{% url 'homePrincipal' %}">Inicio</a>
+            {% if mesg %}
+            <div id="form_message" class="alert alert-danger" role="alert">{{ mesg }}</div>
+            {% endif %}
+        </form>
+        
+        {% endif %}
+
+    </div>
+    
+</body>
+</html>
