@@ -1,14 +1,4 @@
-
-.input, optgroup, select, textarea {
-        margin: 0;
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-        margin-left: 218px;
-        height: 50px;
-        border-color: #ffffff;
-    }
-.button{
+.button1{
     color: #212529;
     font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
@@ -20,24 +10,18 @@
     object-position: unset;
     margin-left: 50px;
     width: 200px;
-    margin-left: 218px;
     height: 45px;
     margin-top:28px ;
-    margin-right: 50px;
+    margin-left: 220px;
 
     }
-.button {
+.button1 {
         color: #212529;
         background-color: #ffffff;
         border-color: #ffffff;
     }
-.button:hover {
+.button1:hover {
         color: #fff; 
         background-color: #0069d9; 
         border-color: #0062cc;
     }
-
-    
-    
-
-    

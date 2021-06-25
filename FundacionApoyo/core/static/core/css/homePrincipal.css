@@ -42,7 +42,7 @@ nav.navbar ul.nav li {
     top: 0;
     width: 100%;
     background-image: url(../img/apoyo.jpg);
-    background-position: unset;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -85,16 +85,23 @@ nav.navbar ul.nav li {
     padding: 40px;
   }
   
-  .btn-warning1 {
+  .btn-primary{
     color: #212529;
+    font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
     border-color: #ffffff;
     align-items: center;
     vertical-align: middle;
     position: relative;
     font-family:sans-serif;
+    object-position: unset;
+    margin-left: 50px;
+    width: 180px;
+    height: 45px;
+    margin-top:28px ;
+
 }
-  
-  
+
+
   
   
