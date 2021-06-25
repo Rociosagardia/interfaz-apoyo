@@ -58,79 +58,61 @@
     nav.navbar {
       background-color: #CC1414;
       height: 70px;
+      opacity: 0.7;
 
     }
   </style>
-
-
 </head>
+<header class="header">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a href="{% url 'homePrincipal' %}"><img src="{%static 'core/img/home.png'%}" width="50px" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">NOSOTROS</a><span class="sr-only"></span>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">APORTADORES</a><span class="sr-only"></span>
+        </li>
+      </ul>
+      <ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <p><a class="btn btn-lg btn-primary" href="{% url 'iniciarSesion' %}">Iniciar sesión</a></p>
+          <p><a class="btn btn-lg btn-primary" href="{%url 'usuarioDonadorRegistro' 'ins' -1%}}">Registrate</a></p>
+        </form>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-        </ul>
-        <ul>
-          <form class="form-inline mt-2 mt-md-0">
-              <p><a class="btn btn-lg btn-primary" href="{% url 'iniciarSesion' %}">Iniciar sesión</a></p>
-              <p><a class="btn btn-lg btn-primary" href="{%url 'usuarioDonadorRegistro' 'ins' -1%}}">Registrate</a></p>
 
+  <div class="sample-header">
+    <div class="sample-header-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1>Bienvenido a fundación apoyo</h1><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          <div>
 
-          </form>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="sample-header">
-      <div class="sample-header-section">
-        <h1>Bienvenido a fundación apoyo</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2></h2>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="sample-section-wrap">
-      <div class="sample-section">
-      </div>
-
-  </header>
-
-  
 </body>
-
-<script>
-  function parallax_height() {
-    var scroll_top = $(this).scrollTop();
-    var sample_section_top = $(".sample-section").offset().top;
-    var header_height = $(".sample-header-section").outerHeight();
-    $(".sample-section").css({ "margin-top": header_height });
-    $(".sample-header").css({ height: header_height - scroll_top });
-  }
-  parallax_height();
-  $(window).scroll(function () {
-    parallax_height();
-  });
-  $(window).resize(function () {
-    parallax_height();
-  });
 </script>
 <script>
-  			$(document).ready(function () {
-			$("#button").on("click", function () {
-				window.location.href="{% url 'iniciarSesion' %}"
+  $(document).ready(function () {
+    $("#button").on("click", function () {
+      window.location.href = "{% url 'iniciarSesion' %}"
 
-			})})
+    })
+  })
 </script>
 
 </html>

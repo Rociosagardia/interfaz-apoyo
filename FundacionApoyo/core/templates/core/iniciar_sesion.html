@@ -59,6 +59,7 @@
     nav.navbar {
       background-color: #CC1414;
       height: 70px;
+      opacity:0.7;
     }
   </style>
 
@@ -68,39 +69,47 @@
 <body>
   <header class="header">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-
+      <a href="{% url 'homePrincipal' %}"><img src="{%static 'core/img/home.png'%}" width="50px" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-
-
-    
+        
     </nav>
+  </header>
 
     <div class="sample-header">
       <div class="sample-header-section">
         <div class="login-box">
-            <h1>Iniciar Sesión</h1>
-     <div>
-         <br><br>
-        <input class="input" id="nick"  name="txtNick" type="text" value="" placeholder="nick" >
-        <br><br><br>
-        <button class="btn btn-lg button" id="ingresar" type="submit">ingresar</button>
-     
-     </div>
+          <div class="container">
+            <div class="row">
+              <div col-xl-6><br><br><br><br><br><br><br>
+                <h1 style="margin-left: 180px;">Iniciar Sesión</h1>
+                <br><br>
+                <input class="input" id="nick" name="txtNick" type="text" value="" placeholder="Ingrese usuario">
+                <br><br><br>
+                <button class="btn btn-lg button" id="ingresar" type="submit">ingresar</button><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div>
+              <div>
 
-        <br><br><br><br><br><br><br><br>
-        <h2></h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="sample-section-wrap">
-      <div class="sample-section">
-      </div>
-
   </header>
-
-  
 </body>
+
+<footer>
+    <style>
+    nav.navbar {
+      background-color: #CC1414;
+      height: 70px;
+    }
+  </style>
+
+
+</footer>
 
 <script>
   function parallax_height() {
@@ -122,9 +131,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
-    $("#ingresar").on("click", function () {
-            window.location.href="../inicioUsuario/"+$("#nick").val()
-        })
+  $("#ingresar").on("click", function () {
+    window.location.href = "../inicioUsuario/" + $("#nick").val()
+  })
 </script>
 
 
